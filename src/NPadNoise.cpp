@@ -48,7 +48,7 @@ template<typename T> bool fillCommon(T *ptr, size_t width, size_t height, std::f
 	
 	// NPad noise operates on 4x4 block
 	// 1. Fill the corner with random values and calculate the middle point
-	for (size_t offy = 0; offy < width; offy += 4)
+	for (size_t offy = 0; offy < height; offy += 4)
 	{
 		for (size_t offx = 0; offx < width; offx += 4)
 		{
